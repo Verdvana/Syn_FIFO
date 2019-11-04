@@ -97,18 +97,22 @@ end
 //------------------------------------------
 //状态计数
 
+wire status_rd = rd_en_r && !wr_en_r && (status_cnt != 0);
+wire status_wr = wr_en_r && !rd_en_r && (status_cnt != (FIFO_DEPTH));	
 
 always@(posedge clk or negedge rst_n) begin
 
 	if(!rst_n)
 		status_cnt <= 0;
 	
-	else if (rd_en_r && !wr_en_r && (status_cnt != 0))
+	else if (status_rd)
 		status_cnt <= status_cnt - 1;
 	
-	else if (wr_en_r && !rd_en_r && (status_cnt != (FIFO_DEPTH)))
+	else if (status_wr)
 		status_cnt <= status_cnt + 1;
-
+		
+	else
+		status_cnt <= status_cnt;
 		
 end
 

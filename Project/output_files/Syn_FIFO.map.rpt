@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Syn_FIFO
-Mon Nov 04 15:16:11 2019
+Mon Nov 04 16:07:17 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -49,7 +49,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 04 15:16:11 2019           ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 04 16:07:17 2019           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; Syn_FIFO                                        ;
 ; Top-level Entity Name              ; Syn_FIFO                                        ;
@@ -443,7 +443,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Nov 04 15:15:58 2019
+    Info: Processing started: Mon Nov 04 16:07:04 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Syn_FIFO -c Syn_FIFO
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -456,8 +456,8 @@ Warning (10222): Verilog HDL Parameter Declaration warning at Syn_FIFO.v(35): Pa
 Info (12127): Elaborating entity "Syn_FIFO" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at Syn_FIFO.v(75): truncated value with size 32 to match size of target (8) File: E:/DE1-SoC/FPGA/Syn_FIFO/RTL/Syn_FIFO.v Line: 75
 Warning (10230): Verilog HDL assignment warning at Syn_FIFO.v(90): truncated value with size 32 to match size of target (8) File: E:/DE1-SoC/FPGA/Syn_FIFO/RTL/Syn_FIFO.v Line: 90
-Warning (10230): Verilog HDL assignment warning at Syn_FIFO.v(107): truncated value with size 32 to match size of target (9) File: E:/DE1-SoC/FPGA/Syn_FIFO/RTL/Syn_FIFO.v Line: 107
-Warning (10230): Verilog HDL assignment warning at Syn_FIFO.v(110): truncated value with size 32 to match size of target (9) File: E:/DE1-SoC/FPGA/Syn_FIFO/RTL/Syn_FIFO.v Line: 110
+Warning (10230): Verilog HDL assignment warning at Syn_FIFO.v(109): truncated value with size 32 to match size of target (9) File: E:/DE1-SoC/FPGA/Syn_FIFO/RTL/Syn_FIFO.v Line: 109
+Warning (10230): Verilog HDL assignment warning at Syn_FIFO.v(112): truncated value with size 32 to match size of target (9) File: E:/DE1-SoC/FPGA/Syn_FIFO/RTL/Syn_FIFO.v Line: 112
 Warning (276020): Inferred RAM node "fifo_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "fifo_rtl_0" 
@@ -504,9 +504,9 @@ Info (21057): Implemented 124 device resources after synthesis - the final resou
     Info (21061): Implemented 94 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4771 megabytes
-    Info: Processing ended: Mon Nov 04 15:16:11 2019
+    Info: Peak virtual memory: 4772 megabytes
+    Info: Processing ended: Mon Nov 04 16:07:17 2019
     Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Total CPU time (on all processors): 00:00:26
 
 
